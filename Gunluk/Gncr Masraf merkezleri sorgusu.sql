@@ -1,0 +1,18 @@
+select * from Kullanicilar where kodu like 'tug%'
+
+04-29-55-58-73-76-119
+select TAXNR, * from L_CAPIFIRM  where NR = 29
+
+select  LOGICALREF,4 AS FIRM, CODE,DEFINITION_,SPECODE from lg_004_emcenter  
+UNION ALL
+select  LOGICALREF,29 AS FIRM, CODE,DEFINITION_,SPECODE from lg_029_emcenter  
+UNION ALL
+select  LOGICALREF,55 AS FIRM, CODE,DEFINITION_,SPECODE from lg_055_emcenter  
+UNION ALL
+select  LOGICALREF,58 AS FIRM, CODE,DEFINITION_,SPECODE from lg_058_emcenter  
+UNION ALL
+select  LOGICALREF,73 AS FIRM, CODE,DEFINITION_,SPECODE from lg_073_emcenter  
+UNION ALL
+select  LOGICALREF,76 AS FIRM, CODE,DEFINITION_,SPECODE from lg_076_emcenter 
+UNION ALL
+select  LOGICALREF,119 AS FIRM, CODE,DEFINITION_,SPECODE from lg_119_emcenter  
