@@ -1,0 +1,6 @@
+TRUNCATE TABLE dbo.L_GOUSERS
+GO
+TRUNCATE TABLE dbo.L_NET
+
+--mükellef.exe 
+delete FROM DLG_NETLOCK
