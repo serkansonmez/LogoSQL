@@ -33,7 +33,7 @@ BEGIN
     -- XML'i okuma
     SELECT @XML = STRXML FROM #XML
     DROP TABLE #XML
-
+ 
     -- XML hazýrlanmasý
     EXEC SP_XML_PREPAREDOCUMENT @HDOC OUTPUT, @XML
 
@@ -50,12 +50,12 @@ BEGIN
                       ForexSelling FLOAT 'ForexSelling',
                       BanknoteBuying FLOAT 'BanknoteBuying',
                       BanknoteSelling FLOAT 'BanknoteSelling')
-
-    -- XML belgesini ve OLE Automation nesnesini serbest býrakma
-    IF @HDOC IS NOT NULL
-    BEGIN
+ 
+    ---- XML belgesini ve OLE Automation nesnesini serbest býrakma
+    --IF @HDOC IS NOT NULL
+    --BEGIN
         EXEC SP_XML_REMOVEDOCUMENT @HDOC
-    END
+    --END
 
     IF @OBJ IS NOT NULL
     BEGIN
